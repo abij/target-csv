@@ -108,7 +108,7 @@ def persist_messages(delimiter, quotechar, messages, destination_path, rewrite_h
             logger.warning("Unknown message type {} in message {}"
                            .format(o['type'], o))
 
-    if files_incorrect_headers and rewrite_headers.lower() == 'true':
+    if files_incorrect_headers and rewrite_headers:
         rewrite_csv(files_incorrect_headers, delimiter, quotechar)
 
     return state
