@@ -10,8 +10,8 @@ setup(name='target-csv',
       classifiers=['Programming Language :: Python :: 3 :: Only'],
       py_modules=['target_csv'],
       install_requires=[
-          'jsonschema>=2.6.0',
-          'singer-python>=5.6.0',
+          'jsonschema==2.6.0',
+          'singer-python==5.9.0',
       ],
       entry_points='''
           [console_scripts]
